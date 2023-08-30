@@ -9,13 +9,13 @@
 /*Data we need to feed the alg:
 - List of Class numbers e.g. ["4RPD101"."4RPD102","4RPD103"]
 - Dates set for presentation (2-3 dates in the form of DD/MM/YYYY), 
-- Advisors’ date preference (Same form as dates set for presentation)
+- Advisors’ date preference (Same form as dates set for presentation) 
+^ SHOULD THIS BE FROM THE DATABASE?? (bese if is a part of the Advisor object)
 */
 
 
 //TODO: NEED TO FETCH DATA SOMEHOW
 //PROBLEM: Still need a way to simulate fetch data in order to test code!!!
-
 async function fetchData(url) {
 // something here TODO
     return data;
@@ -24,37 +24,43 @@ async function fetchData(url) {
 // Assuming we have fetched the required data
 
 function generatePresentationSchedule(studentData, advisorData, classroomNumbers, presentationDates) {
-    const schedule = []; //to populate for final schedule
+    const schedule = [];
+
+    // Sort students by advisor ID
+    studentData.sort((a, b) => a.advisorId.localeCompare(b.advisorId));
 
     for (const advisor of advisorData) {
-        const advisorOfStudents = studentData.filter(student => student.advisorId === advisor.id);
+        const advisorStudents = studentData.filter(student => student.advisorId === advisor.id);
 
-        // Sort advisor of Students based on project preferences
-        for (const student of advisorOfStudents) {
-            const presentationDate = findAvailablePresentationDate(advisor, presentationDates);
-            if (!presentationDate) {
-                console.log(`No available presentation date for student ${student.id}`);
-                continue;
+        // Use advisor's preferred presentation date(s)
+        //assumes that the presentationDatePreferences property is present in the advisor data
+        //Maybe find a way to add preference to Database <= TODO!!!!!!!!!!!!!!!!!
+        for (const presentationDate of advisor.presentationDatePreferences) {
+            // Find available time slot on presentationDate
+            const availableTimeSlot = getTimeSlotForPresentation(presentationDate, schedule);
+
+            if (availableTimeSlot !== null) {
+                const classroomNumber = findAvailableClassroom(classroomNumbers, presentationDate);
+                if (!classroomNumber) {
+                    console.log(`No available classroom for advisor ${advisor.id}`);
+                    continue;
+                }
+
+                const student = advisorStudents.pop(); // Get the next student from the list
+
+                const presentation = {
+                    date: presentationDate,
+                    time: availableTimeSlot,
+                    classroom: classroomNumber,
+                    studentId: student.id,
+                    advisorId: advisor.id,
+                    markerId: student.markerId,
+                    secondMarkerId: student.secondMarkerId || "No Second Marker",
+                    projectTitle: student.projectTitle,
+                };
+
+                schedule.push(presentation);
             }
-
-            const classroomNumber = findAvailableClassroom(classroomNumbers, presentationDate);
-            if (!classroomNumber) {
-                console.log(`No available classroom for student ${student.id}`);
-                continue;
-            }
-
-            const presentation = { //the form the presentation is in 
-                date: presentationDate,
-                time: getTimeSlotForPresentation(presentationDate), // Implement this function
-                classroom: classroomNumber,
-                studentId: student.id,
-                advisorId: advisor.id,
-                markerId: student.markerId,
-                secondMarkerId: student.secondMarkerId || "No Second Marker",
-                projectTitle: student.projectTitle,
-            };
-
-            schedule.push(presentation);
         }
     }
 
