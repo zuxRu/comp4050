@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+}
+ 
+main {
+  padding: 0px;
+}

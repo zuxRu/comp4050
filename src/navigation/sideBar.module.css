@@ -1,0 +1,75 @@
+.sideBar {
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+    height: 94vh;
+    background-color: #A6192E;
+    padding: 0.30rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.sideBarClosed {
+    composes: sideBar;
+    transition: width 0.3s ease-in-out;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.sideComp {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+ 
+.linkText {
+    padding-left: 16px;
+}
+ 
+.linkTextClosed {
+    composes: linkText;
+    visibility: hidden;
+}
+ 
+.sideComp:hover, .logout:hover {
+    background-color: #76232F;
+
+}
+ 
+.menuBtn {
+    align-self: center;
+    align-self: flex-start; 
+    justify-self: flex-end;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
