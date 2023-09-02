@@ -73,3 +73,30 @@ After thinking about the problem longer, I realised a few things:
 5. The schedule output should look something like this [“DateOfPresentation” “TimeOfPresentation” “ClassRoomNumber” “StudentID1” “AdvisorID1” “MarkerID1” “SecondMarkerID” “ProjectTitle”], [“DateOfPresentation” “TimeOfPresentation” “ClassRoomNumber” “StudentID2” “AdvisorID2” “MarkerID2” “No Second Marker” “ProjectTitle”], … With values it looks something like this: [06/11/2023,9:45am,4RPD102,46012345,40000000,40000001,40000002,Optimal arial pathing for drones]
 
 So I decided to scrap the parts of the code where I am trying to allocate markers and advisors, and rethink about what info i have and don't have at this stage.
+
+## Schema received from Olympus team (wk6)
+
+Luca and Joe will update the Allocation Table first:
+
+const AllocationTable = {
+                    Student_Id,
+                    Supervisor_Id,
+                    Project_Id,
+                    2nd_Marker_Id, // set to -1 for MVP
+                    Presentation_Id, // set to -1 by default to be populated
+                };
+
+And my part of the algorithm is to pull this Allocation Table, and populate the Presentation_Id part with the presentation table:
+
+const PresentationTable = {
+                    Presentation_Id,                //unique id for each presentation
+                    Time: AM || PM,                 //for mvp, separate each day into 2 timeslots
+                    Day: "Mon" || "Tue"  || "Wed",  //preset days for mvp
+                    Chair_Id: 1010,                 // chair is the person overseeing all the presentations, ususally Kate,
+                    2nd_Marker_Id: -1,              // set to -1 for mvp
+                };
+I also need to work out how many classrooms we need. To do so, we know that it is fixed that we have 3 days and 2 sessions per day, which gives us 6 sessions per classroom. The number of AllocationTables = the number of students. Each session have 12 students in them, so each classroom can host 72 students. So the number of classrooms needed = (number of AllocationTables)/72. 
+
+
+I also don't need to worry about the functions for manually changing the values of the fields (Raj's job)
+Though my job suddenly seems much easier/clearer, I kinda have to redo the whole thing since this is different than what I thought. 
