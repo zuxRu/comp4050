@@ -100,3 +100,24 @@ I also need to work out how many classrooms we need. To do so, we know that it i
 
 I also don't need to worry about the functions for manually changing the values of the fields (Raj's job)
 Though my job suddenly seems much easier/clearer, I kinda have to redo the whole thing since this is different than what I thought. 
+
+## 1-1 meeting with Luca
+
+Finalised Schema for MVP:
+
+  presentationID        //Unique ID: 1, 2, 3 ...
+  classroomNumber       //Needs to be calculated. For MVP use 1, 2, 3.., substitute for real classrooms in later iterations
+  time                  //Either AM || PM
+  day                   //Preset. For mvp, assume Mon, Tue, Wed
+  chairID (-1)          //Stay as -1 for now
+  secondMarkerID (-1)   //Stay as -1 for now
+
+PresID is unique for each unique session (specific classroom, time and day)
+
+After thinking, I decided that the order of change will be time, classroom and day. 
+
+E.G. For 2 classrooms C1 and C2, the presID 1,2,3 ... should represent
+
+MonC1AM, MonC1PM, MonC2AM, MonC2PM, TueC1Am ... 
+
+by filling 1 class before filling the next, minimises the chance for same Advisor to be scheduled in two diff classrooms at the same time. 
