@@ -1,0 +1,1136 @@
+[
+ {
+   "st_ID": 86331689,
+   "st_first_name": "Violetta",
+   "st_last_name": "Abrahamovich",
+   "st_email": "violetta.abrahamovich@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 49.41,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86175806,
+   "st_first_name": "Emmanuel",
+   "st_last_name": "Annammay",
+   "st_email": "emmanuel.annammay@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 58.41,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86258981,
+   "st_first_name": "Bhanu",
+   "st_last_name": "Mapilla",
+   "st_email": "bhanu.mapilla@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 71.69,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86283013,
+   "st_first_name": "Akash",
+   "st_last_name": "Nop",
+   "st_email": "akash.nop@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 88.25,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 86260056,
+   "st_first_name": "Paula",
+   "st_last_name": "Prooda",
+   "st_email": "paula.prooda@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 77.33,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 86725504,
+   "st_first_name": "Krista",
+   "st_last_name": "Shaheen",
+   "st_email": "krista.shaheen@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 54.25,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 86172017,
+   "st_first_name": "Claire",
+   "st_last_name": "Sutton",
+   "st_email": "claire.sutton@students.mq.edu.au",
+   "st_unit": "CIVIL4092",
+   "st_WAM": 80.88,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95533296,
+   "st_first_name": "Tanay",
+   "st_last_name": "Baskar",
+   "st_email": "tanay.baskar@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 70.38,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95391351,
+   "st_first_name": "Jordan",
+   "st_last_name": "Benson",
+   "st_email": "jordan.benson@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 67,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95525005,
+   "st_first_name": "Bhavish",
+   "st_last_name": "Chowdhury",
+   "st_email": "bhavish.chowdhury@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 70.91,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95792895,
+   "st_first_name": "Inas",
+   "st_last_name": "Darlington",
+   "st_email": "inas.darlington@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 100,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95238278,
+   "st_first_name": "Joshua",
+   "st_last_name": "Davidson",
+   "st_email": "joshua.davidson@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 80.04,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95607796,
+   "st_first_name": "Nick",
+   "st_last_name": "Demorgan",
+   "st_email": "nick.demorgan@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 80.25,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 88164971,
+   "st_first_name": "Aswin",
+   "st_last_name": "Deribhan",
+   "st_email": "aswin.deribhan@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 66.14,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95956022,
+   "st_first_name": "Ethan",
+   "st_last_name": "Small",
+   "st_email": "ethan.luke@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 86.24,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 88613415,
+   "st_first_name": "Gino",
+   "st_last_name": "Belllaghio",
+   "st_email": "gino.belllaghio@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 59.83,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95634092,
+   "st_first_name": "Louise",
+   "st_last_name": "Howlin",
+   "st_email": "louise.howlin@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 74.42,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 86510605,
+   "st_first_name": "Luke",
+   "st_last_name": "Jacobson",
+   "st_email": "luke.jacobson@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 75.33,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95169179,
+   "st_first_name": "Ben",
+   "st_last_name": "Kavendish",
+   "st_email": "ben.kavendish@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 51.18,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95889910,
+   "st_first_name": "Leonardo",
+   "st_last_name": "Krejo",
+   "st_email": "leonardo.krejo@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 66.56,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95630216,
+   "st_first_name": "Jay",
+   "st_last_name": "Kumar",
+   "st_email": "jay.kumar@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 64.17,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95985995,
+   "st_first_name": "Scott",
+   "st_last_name": "Lee",
+   "st_email": "scott.lee@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 70.27,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 88625693,
+   "st_first_name": "Angelina",
+   "st_last_name": "Maltisinni",
+   "st_email": "angelina.maltisinni@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 67.72,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95662398,
+   "st_first_name": "Jaime",
+   "st_last_name": "Obeid",
+   "st_email": "jaime.obeid@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 58.33,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 95472165,
+   "st_first_name": "Priya",
+   "st_last_name": "Paudel",
+   "st_email": "priya.paudel@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 76.2,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95867194,
+   "st_first_name": "Nathan",
+   "st_last_name": "Phillips",
+   "st_email": "nathan.phillips@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 62.35,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95705879,
+   "st_first_name": "Sarah",
+   "st_last_name": "Preston",
+   "st_email": "sarah.prabhakar@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 74.4,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88419775,
+   "st_first_name": "Charles",
+   "st_last_name": "Ross",
+   "st_email": "chan .ross@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 67.07,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88910568,
+   "st_first_name": "Travis",
+   "st_last_name": "Rowson",
+   "st_email": "travis.rowson@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 61.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95527652,
+   "st_first_name": "Satya",
+   "st_last_name": "Salenayati",
+   "st_email": "satya.salenayati@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 73.06,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88908415,
+   "st_first_name": "James",
+   "st_last_name": "Stone",
+   "st_email": "james.stone@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 59.71,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95432791,
+   "st_first_name": "Leonid",
+   "st_last_name": "Strauss",
+   "st_email": "leonid.strauss@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 28.06,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88335822,
+   "st_first_name": "Chowdhury",
+   "st_last_name": "Tasabar",
+   "st_email": "chowdhury.tasabar@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 57.45,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95207275,
+   "st_first_name": "Michael",
+   "st_last_name": "Thystone",
+   "st_email": "michael.thystone@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 80.23,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 43801749,
+   "st_first_name": "Narges",
+   "st_last_name": "Veep",
+   "st_email": "narges.veep@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 70.69,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88438214,
+   "st_first_name": "Brian",
+   "st_last_name": "Wilson",
+   "st_email": "brian.wilson@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 76.55,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95303738,
+   "st_first_name": "Jonathan",
+   "st_last_name": "Yu",
+   "st_email": "jonathan.yu@students.mq.edu.au",
+   "st_unit": "COMP4092",
+   "st_WAM": 71,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95543356,
+   "st_first_name": "Hasan",
+   "st_last_name": "Arshad",
+   "st_email": "hasan.arshad@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 66.17,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86108777,
+   "st_first_name": "Kimberley",
+   "st_last_name": "Charanot",
+   "st_email": "kimberley.charanot@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 59.2,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95871728,
+   "st_first_name": "Stephen",
+   "st_last_name": "Christoff",
+   "st_email": "stephen.christoff@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 57.29,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95543364,
+   "st_first_name": "Junaed",
+   "st_last_name": "Chury",
+   "st_email": "junaed.chury@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 61.75,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88477759,
+   "st_first_name": "Rowshan ",
+   "st_last_name": "Drummond",
+   "st_email": "rowshan .drummond@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 49.43,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86235949,
+   "st_first_name": "Matthew",
+   "st_last_name": "Hanckok",
+   "st_email": "matthew.hanckok@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 61.54,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95958238,
+   "st_first_name": "Yasser",
+   "st_last_name": "Hass",
+   "st_email": "yasser.hass@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 67.81,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88161388,
+   "st_first_name": "Nowsin",
+   "st_last_name": "Janeet",
+   "st_email": "nowsin.janeet@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 75.25,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88373511,
+   "st_first_name": "Nathan",
+   "st_last_name": "Lee",
+   "st_email": "nathan.lee@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 44.18,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 43228003,
+   "st_first_name": "Yiting",
+   "st_last_name": "Lin",
+   "st_email": "yiting.lin@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 69.67,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95601739,
+   "st_first_name": "Logan",
+   "st_last_name": "Marinoff",
+   "st_email": "logan.marinoff@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 67.58,
+   "st_CP": 20
+ },
+ {
+   "st_ID": 86160051,
+   "st_first_name": "Harry",
+   "st_last_name": "Nguyen",
+   "st_email": "harry.nguyen@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 71.57,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86158901,
+   "st_first_name": "Wen",
+   "st_last_name": "Peng",
+   "st_email": "wen.peng@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 66.63,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95667365,
+   "st_first_name": "Muhammad",
+   "st_last_name": "Rahmann",
+   "st_email": "muhammad.rahmann@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 52.83,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95649186,
+   "st_first_name": "Kyle",
+   "st_last_name": "Rosenbaum",
+   "st_email": "kyle.rosenbaum@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 71.43,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86105700,
+   "st_first_name": "Ishfaq",
+   "st_last_name": "Taglini",
+   "st_email": "ishfaq.taglini@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 68.81,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86160086,
+   "st_first_name": "Yifei",
+   "st_last_name": "Cai",
+   "st_email": "yifei.cai@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 79.77,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86158855,
+   "st_first_name": "Haoyang",
+   "st_last_name": "Yang",
+   "st_email": "haoyang.yang@students.mq.edu.au",
+   "st_unit": "ELEC4092",
+   "st_WAM": 65.67,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86322388,
+   "st_first_name": "Ankita",
+   "st_last_name": "Devon",
+   "st_email": "ankita.devon@students.mq.edu.au",
+   "st_unit": "ENGG4092",
+   "st_WAM": 54.86,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86116184,
+   "st_first_name": "Wenbo",
+   "st_last_name": "Zhu",
+   "st_email": "wenbo.zhu@students.mq.edu.au",
+   "st_unit": "ENGG4092",
+   "st_WAM": 65.89,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86222278,
+   "st_first_name": "Abrar",
+   "st_last_name": "Dhanda",
+   "st_email": "abrar.dhanda@students.mq.edu.au",
+   "st_unit": "ENGG8090",
+   "st_WAM": 80.14,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95733007,
+   "st_first_name": "Shoumik",
+   "st_last_name": "Espinoza",
+   "st_email": "shoumik.espinoza@students.mq.edu.au",
+   "st_unit": "ENGG8090",
+   "st_WAM": 52.55,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95689016,
+   "st_first_name": "Aarafat",
+   "st_last_name": "Alati",
+   "st_email": "aarafat.alati@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 73.04,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95665737,
+   "st_first_name": "Ashuutosh",
+   "st_last_name": "Badrul",
+   "st_email": "ashuutosh.badrul@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 75.58,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95439311,
+   "st_first_name": "Christian",
+   "st_last_name": "Barrett",
+   "st_email": "christian.barrett@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 52.86,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88695341,
+   "st_first_name": "Christian",
+   "st_last_name": "Drake",
+   "st_email": "christian.drake@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 59.2,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95417903,
+   "st_first_name": "Raymond",
+   "st_last_name": "Duff",
+   "st_email": "raymond.duff@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 75.21,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95520976,
+   "st_first_name": "Bandara",
+   "st_last_name": "Ekanayake",
+   "st_email": "bandara.ekanayake@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 63.94,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95966877,
+   "st_first_name": "Jane",
+   "st_last_name": "Fulton",
+   "st_email": "jane.fulton@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 45.6,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95385959,
+   "st_first_name": "Matt",
+   "st_last_name": "Hansen",
+   "st_email": "matt.hansen@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 69.38,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88647220,
+   "st_first_name": "Timothy",
+   "st_last_name": "Easey",
+   "st_email": "timothy.easey@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 74.08,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95159629,
+   "st_first_name": "Abby",
+   "st_last_name": "Hutchinson",
+   "st_email": "abby.hutchinson@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 68.63,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88491530,
+   "st_first_name": "Ameer",
+   "st_last_name": "Isham",
+   "st_email": "ameer.isham@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 53.96,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95953988,
+   "st_first_name": "Ryan",
+   "st_last_name": "Leung",
+   "st_email": "ryan.leung@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 69.38,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88613806,
+   "st_first_name": "Michael",
+   "st_last_name": "Liu",
+   "st_email": "michael.liu@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 61.87,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95968895,
+   "st_first_name": "Amreed",
+   "st_last_name": "Machado",
+   "st_email": "amreed.machado@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 77.13,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95162972,
+   "st_first_name": "Nicholas",
+   "st_last_name": "Mackenzie",
+   "st_email": "nicholas.mackenzie@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 76.15,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95871671,
+   "st_first_name": "Joel",
+   "st_last_name": "Martinson",
+   "st_email": "joel.martinson@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 67.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95574766,
+   "st_first_name": "Rana",
+   "st_last_name": "Mashriba",
+   "st_email": "rana.mashriba@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 68.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95682888,
+   "st_first_name": "Prabhasara",
+   "st_last_name": "Munasinge",
+   "st_email": "prabhasara.munasinge@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 67.58,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88428693,
+   "st_first_name": "Najam",
+   "st_last_name": "Nassar",
+   "st_email": "najam.nassar@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 73.25,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95712913,
+   "st_first_name": "Anu",
+   "st_last_name": "Paudellon",
+   "st_email": "anu.paudellon@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 67.29,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95568642,
+   "st_first_name": "Brandon",
+   "st_last_name": "Phan",
+   "st_email": "brandon.phan@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 67.6,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88268998,
+   "st_first_name": "Chengyu",
+   "st_last_name": "Qian",
+   "st_email": "chengyu.qian@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 82.68,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95258995,
+   "st_first_name": "Joel",
+   "st_last_name": "Shaik",
+   "st_email": "joel.shaik@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 71.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95309485,
+   "st_first_name": "Thomas",
+   "st_last_name": "Smith",
+   "st_email": "thomas.smith@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 56,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88927762,
+   "st_first_name": "Martin",
+   "st_last_name": "Taylor",
+   "st_email": "martin.taylor@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 72.75,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95155763,
+   "st_first_name": "Daniel",
+   "st_last_name": "Watson",
+   "st_email": "daniel.watson@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 69.5,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95096163,
+   "st_first_name": "David",
+   "st_last_name": "Williams",
+   "st_email": "david.williams@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 65.36,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95352828,
+   "st_first_name": "Tray",
+   "st_last_name": "Williamson",
+   "st_email": "tray.williamson@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 70.86,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95220522,
+   "st_first_name": "Ian",
+   "st_last_name": "Zhu",
+   "st_email": "ian.zhu@students.mq.edu.au",
+   "st_unit": "MECH4092",
+   "st_WAM": 78.79,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95189714,
+   "st_first_name": "Reece",
+   "st_last_name": "Andrews",
+   "st_email": "reece.andrews@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 77.67,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 49520328,
+   "st_first_name": "Thomas",
+   "st_last_name": "Anison",
+   "st_email": "thomas.anison@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 48.91,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 42914035,
+   "st_first_name": "Keith",
+   "st_last_name": "Anthony",
+   "st_email": "keith.anthony@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 65.52,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 43682871,
+   "st_first_name": "Adam",
+   "st_last_name": "Archison",
+   "st_email": "adam.archison@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 67.08,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95589550,
+   "st_first_name": "Andrew",
+   "st_last_name": "Attaway",
+   "st_email": "andrew.attaway@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 63.3,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 43813518,
+   "st_first_name": "Jack",
+   "st_last_name": "Bannyno",
+   "st_email": "jack.bannyno@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 55.03,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95620326,
+   "st_first_name": "Parth",
+   "st_last_name": "Gupta",
+   "st_email": "parth.gupta@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 58.57,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88929195,
+   "st_first_name": "Saksit",
+   "st_last_name": "Bonkasan",
+   "st_email": "saksit.bonkasan@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 68.14,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95423989,
+   "st_first_name": "Liam",
+   "st_last_name": "Cahanap",
+   "st_email": "liam.cahanap@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 72.82,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95238885,
+   "st_first_name": "Alegra",
+   "st_last_name": "Cao",
+   "st_email": "alegra.cao@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 57.09,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88966598,
+   "st_first_name": "Raina",
+   "st_last_name": "Danson",
+   "st_email": "raina.danson@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 63.87,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95430888,
+   "st_first_name": "Maxwell",
+   "st_last_name": "Diamond",
+   "st_email": "maxwell.diamond@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 74.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95636591,
+   "st_first_name": "Dixon",
+   "st_last_name": "Du",
+   "st_email": "dixon.du@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 65.21,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95499918,
+   "st_first_name": "Hadi",
+   "st_last_name": "Ghassan ",
+   "st_email": "hadi.ghassan @students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 75.83,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95204152,
+   "st_first_name": "Damien",
+   "st_last_name": "Giles",
+   "st_email": "damien.giles@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 62.8,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88861249,
+   "st_first_name": "Blake",
+   "st_last_name": "Joyce",
+   "st_email": "blake.joyce@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 69.88,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95478889,
+   "st_first_name": "Haya",
+   "st_last_name": "Kimlu",
+   "st_email": "haya.kimlu@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 80.13,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95952612,
+   "st_first_name": "Harry",
+   "st_last_name": "Lennon",
+   "st_email": "harry.lennon@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 64.57,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 49507283,
+   "st_first_name": "Vince",
+   "st_last_name": "Maguchi",
+   "st_email": "vince.maguchi@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 58.18,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95123886,
+   "st_first_name": "Andrew",
+   "st_last_name": "Milestone",
+   "st_email": "andrew.milestone@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 74.62,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95435596,
+   "st_first_name": "Scott",
+   "st_last_name": "Mueller",
+   "st_email": "scott.mueller@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 85.97,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95434913,
+   "st_first_name": "Sean",
+   "st_last_name": "Nayar",
+   "st_email": "sean.nayar@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 53.71,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95854904,
+   "st_first_name": "Natalie",
+   "st_last_name": "Nori",
+   "st_email": "natalie.nori@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 47.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95253978,
+   "st_first_name": "Muhammad",
+   "st_last_name": "Ravikman",
+   "st_email": "muhammad.ravikman@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 84.33,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95150680,
+   "st_first_name": "Keith",
+   "st_last_name": "Stacey",
+   "st_email": "keith.stacey@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 63.95,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95309973,
+   "st_first_name": "Brian",
+   "st_last_name": "Stamos",
+   "st_email": "brian.stamos@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 66.73,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95634998,
+   "st_first_name": "James",
+   "st_last_name": "Sutton",
+   "st_email": "james.sutton@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 74.96,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95967598,
+   "st_first_name": "Max",
+   "st_last_name": "Whiteman",
+   "st_email": "max.whiteman@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 74.75,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95986116,
+   "st_first_name": "Sebastian",
+   "st_last_name": "Whitewater",
+   "st_email": "sebastian.whitewater@students.mq.edu.au",
+   "st_unit": "MTRN4092",
+   "st_WAM": 71.38,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88480741,
+   "st_first_name": "Alvin",
+   "st_last_name": "Bieber",
+   "st_email": "alvin.bieber@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 84.89,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95881227,
+   "st_first_name": "Lucas",
+   "st_last_name": "Cowan",
+   "st_email": "lucas.cowan@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 74.88,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88481888,
+   "st_first_name": "Stephen",
+   "st_last_name": "Estrella",
+   "st_email": "stephen.estrella@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 64.74,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86158987,
+   "st_first_name": "Hanling",
+   "st_last_name": "Yoon",
+   "st_email": "hanling.yoon@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 68.54,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86158960,
+   "st_first_name": "Xuanzi",
+   "st_last_name": "Liu",
+   "st_email": "xuanzi.liu@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 58.8,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86159304,
+   "st_first_name": "Bowen",
+   "st_last_name": "Naseer",
+   "st_email": "bowen.naseer@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 68.86,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 86158871,
+   "st_first_name": "Zhe",
+   "st_last_name": "Xu",
+   "st_email": "zhe.xu@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 57.63,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 95673837,
+   "st_first_name": "Fahmida",
+   "st_last_name": "Pun",
+   "st_email": "fahmida.pun@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 75.13,
+   "st_CP": 10
+ },
+ {
+   "st_ID": 88480652,
+   "st_first_name": "Qiwei",
+   "st_last_name": "Zhang",
+   "st_email": "qiwei.zhang@students.mq.edu.au",
+   "st_unit": "TELE4092",
+   "st_WAM": 50,
+   "st_CP": 10
+ }
+]
