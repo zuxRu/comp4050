@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  athens-software:
+    container_name: athens-software
+    image: athens-software
+    build: ./
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
