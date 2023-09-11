@@ -707,21 +707,19 @@ let allocatedProjects = [
 allocatedProjects.sort(
   (a, b) => parseFloat(b.supervisor_ID) - parseFloat(a.supervisor_ID)
 );
+//problem: Does not sort by supervisor id properly.
+//console.log(allocatedProjects);
 
 let presSched = []; // To be populated with final Presentation Schedule to print [{...} , {...} , ...]
 
 //Data to be built according to schema 
-let presIDCounter = 0; //Unique presID = 0,1,2,3 ... 
+let presIDCounter = 1; //Unique presID = 0,1,2,3 ... 
 
 let dayofWeek = ['Mon', 'Tue', 'Wed']; //preset for MVP
 let dayCount = 0; // use for idx of dayofweek
-//let dayofWeek = ['Mon', 'Tue']; //FOR DEMO 1
-//let dayofWeek = ['Mon']; //FOR DEMO 2
 
 let seshArr = ['AM', 'PM']; //Only 2 sessions/times per day
 let timeCount = 0; // use for idx of seshArr //redundant/can just use presIDcounter
-//let seshArr = ['AM', 'PM']; //FOR DEMO 1
-//let seshArr = ['AM']; //FOR DEMO 2
 
 // Calculating no of classrooms needed
 let studentsPerRoomPerSesh = 12; // 3hr sesh, 15min per pres = 12 presentations per sesh per room
@@ -741,59 +739,46 @@ secondMarkerID (-1)
 
 //Scheduling Alg
 for (let i = 0; i < allocatedProjects.length; i++) {
-  let tempPres = {}; // Used to build object according to schema before pusing onto presSched
 
-  // Update the presentation properties
-  tempPres.presentationID = presIDCounter;
-  tempPres.classroomNumber = classroomNum;
-  tempPres.time = seshArr[timeCount % seshArr.length];
-  tempPres.day = dayofWeek[dayCount % dayofWeek.length];
-  tempPres.chairID = -1;
-  tempPres.secondMarkerID = -1;
+  if (i % 12 == 0) { //for every batch of 12 students
+    let tempPres = {}; // Used to build object according to schema before pusing onto presSched
 
-  // Add the presentation to the schedule
-  presSched.push(tempPres);
+    // Update the presentation properties
+    tempPres.presentationID = presIDCounter;
+    tempPres.classroomNumber = classroomNum;
+    tempPres.time = seshArr[timeCount % seshArr.length];
+    tempPres.day = dayofWeek[dayCount % dayofWeek.length];
+    tempPres.chairID = -1;
+    tempPres.secondMarkerID = -1;
 
-  /*
-  ==>Order of change: time, classroom then day. 
-  e.g.
-  For 2 classrooms C1 and C2, the presID 1,2,3 ... should represent
-  MonC1AM, MonC1PM, MonC2AM, MonC2PM, TueC1Am ... 
-  */
+    // Add the presentation to the schedule
+    presSched.push(tempPres);
 
-  // Increment counters based on the desired order of change
-  timeCount++;
-  if (timeCount % seshArr.length === 0) { //AM/PM switch
+    /*
+    ==>Order of change: time, classroom then day. 
+    e.g.
+    For 2 classrooms C1 and C2, the presID 1,2,3 ... should represent
+    MonC1AM, MonC1PM, MonC2AM, MonC2PM, TueC1Am ... 
+    */
+
+    // Increment counters based on the desired order of change
+    timeCount++;
+    if (timeCount % seshArr.length === 0) { //AM/PM switch
       classroomNum++;
-  }
-  if (classroomNum > numberOfClassrooms) { //Cycles through classrooms
+    }
+    if (classroomNum > numberOfClassrooms) { //Cycles through classrooms
       classroomNum = 1;
       dayCount++;
-  }
+    }
 
-  // Increment presentation ID for each batch of students
-  if (i % studentsPerRoomPerSesh === studentsPerRoomPerSesh - 1) {
-      presIDCounter++;
+    // Increment presentation ID for each batch of students
+    presIDCounter++;
   }
-
   // Assign presentation ID to the allocated project
-  allocatedProjects[i].presentation_ID = presIDCounter;
+  allocatedProjects[i].presentation_ID = presIDCounter - 1;
 }
 
 console.log("Number of Classrooms needed: " + numberOfClassrooms);
 console.log(presSched);
 console.log(allocatedProjects);
 
-
-/*
-To run: Have code runner extension for VSC installed. (I also have node.js installed if that makes a diff)
-Hit Triangle "Run Code" on top right corner of VSC, and check the output
-
-For Demo:
-- Try changing Students per room per sesh: notice how number of students with same PresentationID also changes
-- Trying changing dayofweek to DEMO one and see how that affects output
-- Try changing seshArr to DEMO one and see how that affects output
-
-==>Notice how the order of change is always time, classroom then day. 
-==>Notice how Number of Classrooms needed changes
-*/
