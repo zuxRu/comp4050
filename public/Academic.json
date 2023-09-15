@@ -1,0 +1,274 @@
+[
+ {
+   "a_ID": "mq33260056",
+   "a_first_name": "Sarah",
+   "a_last_name": "Devon",
+   "a_email": "sarah.devon@mq.edu.au",
+   "a_discipline": 2,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq33725504",
+   "a_first_name": "Leonardo",
+   "a_last_name": "Da Vinci",
+   "a_email": "leonardo.da vinci@mq.edu.au",
+   "a_discipline": 2,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq33172017",
+   "a_first_name": "Isaac",
+   "a_last_name": "Callegaro",
+   "a_email": "isaac.callegaro@mq.edu.au",
+   "a_discipline": 2,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15533296",
+   "a_first_name": "Michael",
+   "a_last_name": "Kobotaru",
+   "a_email": "michael.kobotaru@mq.edu.au",
+   "a_discipline": 2,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15391351",
+   "a_first_name": "Venetta",
+   "a_last_name": "Cetin",
+   "a_email": "venetta.cetin@mq.edu.au",
+   "a_discipline": 1,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15525005",
+   "a_first_name": "Malcolm",
+   "a_last_name": "Payne",
+   "a_email": "malcolm.payne@mq.edu.au",
+   "a_discipline": 1,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15792815",
+   "a_first_name": "Simon",
+   "a_last_name": "Clark",
+   "a_email": "simon.clark@mq.edu.au",
+   "a_discipline": 1,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15238278",
+   "a_first_name": "Alan",
+   "a_last_name": "Jackson",
+   "a_email": "alan.jackson@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15607796",
+   "a_first_name": "Seb",
+   "a_last_name": "Huda",
+   "a_email": "seb.huda@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq21164971",
+   "a_first_name": "Maria",
+   "a_last_name": "Bennet",
+   "a_email": "maria.bennet@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15156022",
+   "a_first_name": "Nicholas",
+   "a_last_name": "Richards",
+   "a_email": "nicholas.richards@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq21613415",
+   "a_first_name": "Ian",
+   "a_last_name": "Ian Wood",
+   "a_email": "ian.ian wood@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15634092",
+   "a_first_name": "David",
+   "a_last_name": "Hansen",
+   "a_email": "david.hansen@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq33510605",
+   "a_first_name": "Brian",
+   "a_last_name": "Gao",
+   "a_email": "brian.gao@mq.edu.au",
+   "a_discipline": 3,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15169179",
+   "a_first_name": "Sam",
+   "a_last_name": "Wu",
+   "a_email": "sam.wu@mq.edu.au",
+   "a_discipline": 3,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15219910",
+   "a_first_name": "Richard",
+   "a_last_name": "Collins",
+   "a_email": "richard.collins@mq.edu.au",
+   "a_discipline": 3,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15630216",
+   "a_first_name": "Tu",
+   "a_last_name": "Le",
+   "a_email": "tu.le@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15985915",
+   "a_first_name": "Tuan",
+   "a_last_name": "Pham",
+   "a_email": "tuan.pham@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq21625693",
+   "a_first_name": "Nihil",
+   "a_last_name": "Patel",
+   "a_email": "nihil.patel@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15662398",
+   "a_first_name": "Ram",
+   "a_last_name": "Sharma",
+   "a_email": "ram.sharma@mq.edu.au",
+   "a_discipline": 5,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15472165",
+   "a_first_name": "Sunita",
+   "a_last_name": "Ann Lee",
+   "a_email": "sunita.ann lee@mq.edu.au",
+   "a_discipline": 5,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15337194",
+   "a_first_name": "Sri",
+   "a_last_name": "Singh",
+   "a_email": "sri.singh@mq.edu.au",
+   "a_discipline": 5,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15705879",
+   "a_first_name": "Anita",
+   "a_last_name": "Kumar",
+   "a_email": "anita.kumar@mq.edu.au",
+   "a_discipline": 7,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq21419775",
+   "a_first_name": "William",
+   "a_last_name": "Nazmul Huda",
+   "a_email": "william.nazmul huda@mq.edu.au",
+   "a_discipline": 7,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq21910568",
+   "a_first_name": "Thomas",
+   "a_last_name": "Smith",
+   "a_email": "thomas.smith@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15527652",
+   "a_first_name": "Tama",
+   "a_last_name": "Williams",
+   "a_email": "tama.williams@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq21908415",
+   "a_first_name": "Aroha",
+   "a_last_name": "Jones",
+   "a_email": "aroha.jones@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq15432791",
+   "a_first_name": "Matthew",
+   "a_last_name": "Brown",
+   "a_email": "matthew.brown@mq.edu.au",
+   "a_discipline": 4,
+   "a_school": "Engineering"
+ },
+ {
+   "a_ID": "mq21335822",
+   "a_first_name": "Robert",
+   "a_last_name": "Taylor",
+   "a_email": "robert.taylor@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15207275",
+   "a_first_name": "Johannes",
+   "a_last_name": "Meyer",
+   "a_email": "johannes.meyer@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq43801749",
+   "a_first_name": "Sophia",
+   "a_last_name": "Weber",
+   "a_email": "sophia.weber@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq21438214",
+   "a_first_name": "Max",
+   "a_last_name": "Fischer",
+   "a_email": "max.fischer@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15303738",
+   "a_first_name": "Kate ",
+   "a_last_name": "Stefanov",
+   "a_email": "kate.stefanov@mq.edu.au",
+   "a_discipline": 6,
+   "a_school": "Computing"
+ },
+ {
+   "a_ID": "mq15543356",
+   "a_first_name": "Hazer",
+   "a_last_name": "Inaltekin",
+   "a_email": "hazer.inaltekin@mq.edu.au",
+   "a_discipline": 3,
+   "a_school": "Engineering"
+ }
+]
