@@ -704,10 +704,17 @@ let allocatedProjects = [
 
 //Sort allocated Projects by supervisor as a Optimization -> Presentation more likely to have the same supervisor
 //Problem/edge case: how to prevent same supervisor in multiple rooms at the same time?
-allocatedProjects.sort(
-  (a, b) => parseFloat(b.supervisor_ID) - parseFloat(a.supervisor_ID)
-);
-//problem: Does not sort by supervisor id properly.
+// allocatedProjects.sort(
+//   (a, b) => parseFloat(b.supervisor_ID) - parseFloat(a.supervisor_ID)
+// );
+
+allocatedProjects.sort((a, b) => {
+  return a.supervisor_ID.localeCompare(b.supervisor_ID, undefined, {
+    numeric: true,
+    sensitivity: 'base'
+  })
+})
+
 //console.log(allocatedProjects);
 
 let presSched = []; // To be populated with final Presentation Schedule to print [{...} , {...} , ...]
