@@ -704,19 +704,22 @@ let allocatedProjects = [
 
 //Sort allocated Projects by supervisor as a Optimization -> Presentation more likely to have the same supervisor
 //Problem/edge case: how to prevent same supervisor in multiple rooms at the same time?
-// allocatedProjects.sort(
-//   (a, b) => parseFloat(b.supervisor_ID) - parseFloat(a.supervisor_ID)
-// );
-
 allocatedProjects.sort((a, b) => {
   return a.supervisor_ID.localeCompare(b.supervisor_ID, undefined, {
     numeric: true,
     sensitivity: 'base'
   })
 })
-
 //console.log(allocatedProjects);
 
+/* Schema
+presentationID        -> +1 every 12 students
+classroomNumber       -> for MVP, classroomNum = 1,2,3 ... substitues room code
+time                  -> AM or PM
+day                   -> Mon Tue or Wed
+chairID (-1)
+secondMarkerID (-1) 
+*/
 let presSched = []; // To be populated with final Presentation Schedule to print [{...} , {...} , ...]
 
 //Data to be built according to schema 
@@ -734,15 +737,14 @@ let allPresPerSesh = studentsPerRoomPerSesh * dayofWeek.length * seshArr.length;
 let numberOfClassrooms = Math.ceil(allocatedProjects.length / allPresPerSesh); // no of presentations/persentations per sesh = num of classrooms we need
 let classroomNum = 1;
 
+// Implementing chairID and secondMarkerID
 
-/* Schema
-presentationID        -> +1 every 12 students
-classroomNumber       -> for MVP, classroomNum = 1,2,3 ... substitues room code
-time                  -> AM or PM
-day                   -> Mon Tue or Wed
-chairID (-1)
-secondMarkerID (-1) 
-*/
+// No idea how this needs to be done 
+// implementing chairID as picking between a predefined list of academics 
+//(that way if kate wants to do all of them she can just self nominate herself and hazer can say which ones he wants working on it) 
+let chairIDarr = [466997,465796,466347,469056,469004,463817,460162,467174,465304,466355,466074,465382,461209,460413,469840,462845,469302];
+// setting second marker as the last supervisor in the same sesh, or maybe a predefined array?
+let secondMarkerIDarr = [466997,465796,466347,469056,469004,463817,460162,467174,465304,466355,466074,465382,461209,460413,469840,462845,469302];
 
 //Scheduling Alg
 for (let i = 0; i < allocatedProjects.length; i++) {
@@ -755,8 +757,20 @@ for (let i = 0; i < allocatedProjects.length; i++) {
     tempPres.classroomNumber = classroomNum;
     tempPres.time = seshArr[timeCount % seshArr.length];
     tempPres.day = dayofWeek[dayCount % dayofWeek.length];
-    tempPres.chairID = -1;
-    tempPres.secondMarkerID = -1;
+    
+    //Implementation 1: using preset array of chairID and second Marker IDs
+    //tempPres.chairID = chairIDarr [presIDCounter-1 % chairIDarr.length];
+    //tempPres.secondMarkerID = secondMarkerIDarr [presIDCounter-1 % secondMarkerIDarr.length];
+
+    //implementation 2:
+    //could also allocate chair as whoever's supervising in that sesh first
+    tempPres.chairID = allocatedProjects[i].supervisor_ID;
+    //second marker could be the last supervisor in the same sesh.
+    if (allocatedProjects[i + 11] && allocatedProjects[i + 11].supervisor_ID) {
+      tempPres.secondMarkerID = allocatedProjects[i + 11].supervisor_ID;
+  } else { //if not enough people in the sesh,
+      tempPres.secondMarkerID = allocatedProjects[i].supervisor_ID; // make second marker same as first supervisor
+  }
 
     // Add the presentation to the schedule
     presSched.push(tempPres);

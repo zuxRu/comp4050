@@ -125,5 +125,5 @@ by filling 1 class before filling the next, minimises the chance for same Adviso
 ## Presentation_Scheduler Alpha MVP released
 
 ## Mid sem break goals
-Fixed bugs in MVP, now fully working as intended
+Fixed bugs in MVP (unique ID and supervisor ID sorter), now fully working as intended
 I want to implement ChairID and SecondMarkerID, but I have no idea how Kate and Hazer wants this to be done. 
