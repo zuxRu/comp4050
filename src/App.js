@@ -5,6 +5,7 @@ var Academics;
 var ProjectsAloc;
 var Students;
 var Supervisors;
+var Projects;
 
 var paCIVIL = [];
 var paCOMP = [];
@@ -17,7 +18,6 @@ var paTELE = [];
 var aCIVIL = [];
 var aCOMP = [];
 var aELEC = [];
-var aENGG = [];
 var aMECH = [];
 var aMTRN = [];
 var aTELE = [];
@@ -54,34 +54,35 @@ async function getapi(url) {
     const resStudents = await fetch("Student.json");
     const resProjectsAloc = await fetch("DemoAlocation.json");
     const resSupervisors = await fetch("Supervisor.json");
+    const resProjects = await fetch("Projects.json");
    
     // Storing data in form of JSON
     Academics = await resAcademics.json();
     Students = await resStudents.json();
     ProjectsAloc = await resProjectsAloc.json();
     Supervisors = await resSupervisors.json();
+    Projects = await resProjects.json();
     
     //Sorting object arrays
     Students = addStudentDisciplines();
     Academics = addAcademicCaps();
     addProjectDisciplines();
     addSupervisorCap();
-    sortMarkers();
+    //sortMarkers();
     sortAcademics();
     Students = strip();
     ProjectsAloc = merge();
-    //console.log(Supervisors);
-    //console.log(ProjectsAloc);
-    //console.log(Students);
-    //console.log(Academics);
-    sortProjectsAloc();
-    allocateMarkers(paCIVIL, aCIVIL);
+    
+    /*allocateMarkers(paCIVIL, aCIVIL);
     allocateMarkers(paCOMP, aCOMP);
     allocateMarkers(paELEC, aELEC);
     allocateMarkers(paMECH, aMECH);
     allocateMarkers(paMTRN, aMTRN);
-    allocateMarkers(paTELE, aTELE);
-    console.log(paCIVIL, paCOMP, paELEC, paMECH, paMTRN, paTELE)
+    allocateMarkers(paTELE, aTELE);*/
+    ProjectsAloc = eng(ProjectsAloc);
+    //console.log(ProjectsAloc);
+    sortProjectsAloc();
+    console.log(paCIVIL, paCOMP, paELEC, paMECH, paMTRN, paTELE, paENGG);
 }
 // Calling that async function
 getapi(api_url);
@@ -120,7 +121,7 @@ function addProjectDisciplines() {
 function addAcademicCaps() {
   const temp = Academics.map(element => {
     return element = {
-      ...{...element, a_cap: 5}
+      ...{...element, a_cap: 10}
     };
   });
   return temp;
@@ -224,16 +225,67 @@ function allocateMarkers(projects, markers){
       break;
     }
     next = markers.shift();
-    if (next.a_ID !== projects[i].supervisor_ID && next.a_cap > 0) {
+    if (next.a_ID !== projects[i].supervisor_ID && next.a_cap > 0  && projects[i].second_marker_ID === -1 ) {
       projects[i].second_marker_ID = next.a_ID;
       next.a_cap--;
       markers.push(next);
     }
     else {
-      //markers.splice(1, 0, next);
       i--;
     }
     i++;
   }
 }
+
+function allocateMarkersEdgeCases(project, markers) {
+  var next;
+  let  i = 0;
+  while ( i < markers.length){
+    next = markers.shift();
+    if (next.a_ID !== project.supervisor_ID && next.a_cap > 0  && project.second_marker_ID == -1 ) {
+      project.second_marker_ID = next.a_ID;
+      next.a_cap--;
+      markers.push(next);
+      break;
+    }
+    else {
+      i--;
+    }
+    i++;
+  }
+  return project;
+}
+
+function eng (projects) {
+  projects.reduce((accum, curr) => {
+    const P = Projects.find(d => d.p_ID === curr.project_ID);
+    if (P) {
+      
+      if (P.p_fields.includes("Civil")) {
+        allocateMarkersEdgeCases(curr, aCIVIL);
+      } 
+      else if (P.p_fields.includes("Electrical")) {
+        allocateMarkersEdgeCases(curr, aELEC);
+      }
+      else if (P.p_fields.includes("Electronics")) {
+        allocateMarkersEdgeCases(curr, aELEC);
+      }
+      else if (P.p_fields.includes("Mechanical")) {
+        allocateMarkersEdgeCases(curr, aMECH);
+      }
+      else if (P.p_fields.includes("Mechatronics")) {
+        allocateMarkersEdgeCases(curr, aMTRN);
+      }
+      else if (P.p_fields.includes("Software")) {
+        allocateMarkersEdgeCases(curr, aCOMP);
+      }
+      else if (P.p_fields.includes("Telecommunication")) {
+        allocateMarkersEdgeCases(curr, aTELE);
+      }
+    };
+    return accum;
+  }, []);
+  return projects;
+}
+
 export default App;
