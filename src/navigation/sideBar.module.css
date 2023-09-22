@@ -1,0 +1,92 @@
+.sideBar {
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+    margin-top: 64px;
+    position: fixed;
+    height: 100%;
+    background-color: #A6192E;
+    padding: 0.30rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.sideBarClosed {
+    composes: sideBar;
+    transition: width 0.3s ease-in-out;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* @media (max-width: 800px) {
+    .sideBar {
+        composes: sideBar;
+        transition: width 0.3s ease-in-out;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  } */
+ 
+.sideComp {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout {
+    /* display: flex;
+    align-items: center; */
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    /* margin-bottom: 0; */
+}
+
+/* #collapseButton :disabled{
+    cursor: none;
+} */
+ 
+.linkText {
+    padding-left: 16px;
+}
+ 
+.linkTextClosed {
+    composes: linkText;
+    visibility: hidden;
+}
+ 
+.sideComp:hover, .logout:hover {
+    background-color: #76232F;
+}
+ 
+.menuBtn {
+    align-self: center;
+    align-self: flex-start; 
+    justify-self: flex-end;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

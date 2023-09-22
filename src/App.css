@@ -1,0 +1,41 @@
+.master-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-left: 260px; /* This is the SideNavBar margin */
+  padding: 10px;
+}
+
+.master-flexbox-closed {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-left: 60px; /* This is the SideNavBar margin */
+  padding: 10px;
+}
+
+.child-flexbox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 223, 197);
+  width: 100%;
+  margin-top: 2px;
+}
+
+.child-flexbox-row {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(223, 223, 197);
+  width: 100%;
+}
+
+p{
+  text-align: center;
+  padding-top: 10px;
+}

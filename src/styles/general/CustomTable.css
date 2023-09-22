@@ -1,0 +1,86 @@
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    padding: 5px;
+    border: 5px solid transparent;
+}
+  
+.table {
+    width: calc(100% - 10px);
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #8c2020;
+}
+
+.table th {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #763333;
+    color: white;
+}
+
+.table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table tbody td:first-child {
+    background-color: white !important;
+    color: #000;
+}
+
+.centered-cell {
+    vertical-align: middle;
+}
+
+.first-column {
+    width: 25%;
+}
+
+input {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    width: 91%;
+    padding: 12px 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.graded {
+    font-size: 16px;
+    background-color: #38B02E;
+    border: none;
+    width: 91%;
+    padding: 12px 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.to-graded {
+    font-size: 16px;
+    background-color: #FF070F;
+    border: none;
+    width: 91%;
+    padding: 12px 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:hover {
+    background-color: #fffaf3;
+}
+
+input:focus {
+    outline: 1px solid #ccc;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,19 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  flex-basis: calc(33.33% - 10px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+  padding: 10px;
+}
+
+
+label {
+  margin-right: 5px;
+}

@@ -1,0 +1,78 @@
+[{
+    "st_ID": 88908415,
+    "st_first_name": "James",
+    "st_last_name": "Stone",
+    "st_email": "james.stone@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 59.71,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95432791,
+    "st_first_name": "Leonid",
+    "st_last_name": "Strauss",
+    "st_email": "leonid.strauss@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 28.06,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88335822,
+    "st_first_name": "Chowdhury",
+    "st_last_name": "Tasabar",
+    "st_email": "chowdhury.tasabar@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 57.45,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95207275,
+    "st_first_name": "Michael",
+    "st_last_name": "Thystone",
+    "st_email": "michael.thystone@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 80.23,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 43801749,
+    "st_first_name": "Narges",
+    "st_last_name": "Veep",
+    "st_email": "narges.veep@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 70.69,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88438214,
+    "st_first_name": "Brian",
+    "st_last_name": "Wilson",
+    "st_email": "brian.wilson@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 76.55,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95303738,
+    "st_first_name": "Jonathan",
+    "st_last_name": "Yu",
+    "st_email": "jonathan.yu@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 71,
+    "st_grade": 0.0,
+    "graded": false,
+    "st_CP": 10
+  }
+]

@@ -1,0 +1,72 @@
+[{
+    "st_ID": 95867194,
+    "st_first_name": "Nathan",
+    "st_last_name": "Phillips",
+    "st_email": "nathan.phillips@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 62.35,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95705879,
+    "st_first_name": "Sarah",
+    "st_last_name": "Preston",
+    "st_email": "sarah.prabhakar@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 74.4,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88419775,
+    "st_first_name": "Charles",
+    "st_last_name": "Ross",
+    "st_email": "chan .ross@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 67.07,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88910568,
+    "st_first_name": "Travis",
+    "st_last_name": "Rowson",
+    "st_email": "travis.rowson@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 61.33,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95527652,
+    "st_first_name": "Satya",
+    "st_last_name": "Salenayati",
+    "st_email": "satya.salenayati@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 73.06,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88908415,
+    "st_first_name": "James",
+    "st_last_name": "Stone",
+    "st_email": "james.stone@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 59.71,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 95432791,
+    "st_first_name": "Leonid",
+    "st_last_name": "Strauss",
+    "st_email": "leonid.strauss@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 28.06,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 88335822,
+    "st_first_name": "Chowdhury",
+    "st_last_name": "Tasabar",
+    "st_email": "chowdhury.tasabar@students.mq.edu.au",
+    "st_unit": "COMP4092",
+    "st_WAM": 57.45,
+    "st_CP": 10
+  }]

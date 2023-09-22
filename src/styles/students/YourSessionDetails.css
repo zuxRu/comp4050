@@ -1,0 +1,18 @@
+.row {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+.display-text{
+  text-align: left;
+}

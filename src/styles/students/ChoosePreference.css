@@ -1,0 +1,22 @@
+.choosepref {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="number"] {
+    width: 90%;
+  }
+  
+  label {
+    margin-right: 5px;
+  }
+  

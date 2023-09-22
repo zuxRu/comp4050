@@ -1,0 +1,57 @@
+[
+    {
+      "time": "9 to 10",
+      "monday": "Class",
+      "tuesday": "No Session",
+      "wednesday": "Class",
+      "thursday": "Class",
+      "friday": "Class",
+      "weekend": "No Session"
+    },
+    {
+      "time": "10 to 11",
+      "monday": "Class",
+      "tuesday": "Class",
+      "wednesday": "Class",
+      "thursday": "Class",
+      "friday": "Class",
+      "weekend": "No Session"
+    },
+    {
+      "time": "11 to 12",
+      "monday": "Break",
+      "tuesday": "Class",
+      "wednesday": "Break",
+      "thursday": "Break",
+      "friday": "Break",
+      "weekend": "No Session"
+    },
+    {
+      "time": "12 to 1",
+      "monday": "Class",
+      "tuesday": "Break",
+      "wednesday": "Class",
+      "thursday": "Class",
+      "friday": "Class",
+      "weekend": "No Session"
+    },
+    {
+      "time": "1 to 2",
+      "monday": "Class",
+      "tuesday": "Class",
+      "wednesday": "Class",
+      "thursday": "Class",
+      "friday": "Class",
+      "weekend": "No Session"
+    },
+    {
+      "time": "2 to 3",
+      "monday": "Class",
+      "tuesday": "Class",
+      "wednesday": "Class",
+      "thursday": "Class",
+      "friday": "Class",
+      "weekend": "No Session"
+    }
+  ]
+  

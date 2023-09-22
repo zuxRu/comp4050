@@ -1,0 +1,31 @@
+[
+    {
+      "label": "Name",
+      "value": "Student Name"
+    },
+    {
+      "label": "Thesis Topic",
+      "value": "This is my thesis Topic"
+    },
+    {
+      "label": "Supervisor",
+      "value": "Prof. Best Supervisor"
+    },
+    {
+      "label": "Presentation Date",
+      "value": "01/01/2023"
+    },
+    {
+      "label": "Presentation Day",
+      "value": "Wednesday"
+    },
+    {
+      "label": "Session Code",
+      "value": "WK2_WED_AM"
+    },
+    {
+      "label": "Presentation Time",
+      "value": "09:45am to 10:00am"
+    }
+  ]
+  

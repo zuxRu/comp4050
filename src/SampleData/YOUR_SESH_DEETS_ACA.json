@@ -1,0 +1,22 @@
+[
+    {
+      "label": "Name",
+      "value": "Supervisor Name"
+    },
+    {
+      "label": "Session Date",
+      "value": "01/01/2023"
+    },
+    {
+      "label": "Session Day",
+      "value": "Wednesday"
+    },
+    {
+      "label": "Session Code",
+      "value": "WK2_WED_AM"
+    },
+    {
+      "label": "Number of My Students in Session",
+      "value": "3"
+    }
+  ]

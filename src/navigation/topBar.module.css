@@ -1,0 +1,21 @@
+.customNavBar {
+    background-image: url("../assets/mqGradient.png");
+    font-weight: bold;
+}
+
+.centerItems {
+    margin: 0 auto;
+    color: white;
+}
+
+.profileImage {
+    border-radius: 50%;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.home {
+    color: white;
+    margin-left: 1rem;
+    size: 110vi;
+}

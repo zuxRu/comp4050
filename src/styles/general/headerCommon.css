@@ -1,0 +1,14 @@
+.h1-main-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+.h2-sub-heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(146, 35, 35);
+    margin-top: 10px;
+    color: white;
+}

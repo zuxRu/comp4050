@@ -1,0 +1,45 @@
+[{
+    "st_ID": 86331689,
+    "st_first_name": "Violetta",
+    "st_last_name": "Abrahamovich",
+    "st_email": "violetta.abrahamovich@students.mq.edu.au",
+    "st_unit": "CIVIL4092",
+    "st_WAM": 49.41,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 86175806,
+    "st_first_name": "Emmanuel",
+    "st_last_name": "Annammay",
+    "st_email": "emmanuel.annammay@students.mq.edu.au",
+    "st_unit": "CIVIL4092",
+    "st_WAM": 58.41,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 86258981,
+    "st_first_name": "Bhanu",
+    "st_last_name": "Mapilla",
+    "st_email": "bhanu.mapilla@students.mq.edu.au",
+    "st_unit": "CIVIL4092",
+    "st_WAM": 71.69,
+    "st_CP": 10
+  },
+  {
+    "st_ID": 86283013,
+    "st_first_name": "Akash",
+    "st_last_name": "Nop",
+    "st_email": "akash.nop@students.mq.edu.au",
+    "st_unit": "CIVIL4092",
+    "st_WAM": 88.25,
+    "st_CP": 20
+  },
+  {
+    "st_ID": 86260056,
+    "st_first_name": "Paula",
+    "st_last_name": "Prooda",
+    "st_email": "paula.prooda@students.mq.edu.au",
+    "st_unit": "CIVIL4092",
+    "st_WAM": 77.33,
+    "st_CP": 20
+  }]
