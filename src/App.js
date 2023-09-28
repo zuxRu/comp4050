@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 var Academics;
 var ProjectsAloc;
 var Students;
@@ -30,6 +31,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button type="button" onClick={exportData}>
+        Export Data
+      </button>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -37,11 +41,25 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          
         </a>
       </header>
+      
     </div>
   );
 }
+
+const exportData = () => {
+  const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
+    JSON.stringify(ProjectsAloc)
+  )}`;
+  const link = document.createElement("a");
+  link.href = jsonString;
+  link.download = "data.json";
+
+  link.click();
+};
+
 // api url
 const api_url =
       "tba";
@@ -66,11 +84,10 @@ async function getapi(url) {
     //Sorting object arrays
     Students = addStudentDisciplines();
     Academics = addAcademicCaps();
-    addProjectDisciplines();
+    //addProjectDisciplines();
     addSupervisorCap();
-    //sortMarkers();
     sortAcademics();
-    Students = strip();
+    //Students = strip();
     ProjectsAloc = merge();
     
     /*allocateMarkers(paCIVIL, aCIVIL);
@@ -79,10 +96,10 @@ async function getapi(url) {
     allocateMarkers(paMECH, aMECH);
     allocateMarkers(paMTRN, aMTRN);
     allocateMarkers(paTELE, aTELE);*/
-    ProjectsAloc = eng(ProjectsAloc);
-    //console.log(ProjectsAloc);
-    sortProjectsAloc();
-    console.log(paCIVIL, paCOMP, paELEC, paMECH, paMTRN, paTELE, paENGG);
+    ProjectsAloc = addMarkers(ProjectsAloc);
+
+    //sortProjectsAloc();
+    console.log(ProjectsAloc);
 }
 // Calling that async function
 getapi(api_url);
@@ -108,7 +125,6 @@ function sortMarkers() {
     return a.st_discipline - b.st_discipline;
   });
 }
-
 
 function addProjectDisciplines() {
   ProjectsAloc.reduce((accum, curr) => {
@@ -242,7 +258,7 @@ function allocateMarkersEdgeCases(project, markers) {
   let  i = 0;
   while ( i < markers.length){
     next = markers.shift();
-    if (next.a_ID !== project.supervisor_ID && next.a_cap > 0  && project.second_marker_ID == -1 ) {
+    if (next.a_ID !== project.supervisor_ID && next.a_cap > 0  && project.second_marker_ID === -1 ) {
       project.second_marker_ID = next.a_ID;
       next.a_cap--;
       markers.push(next);
@@ -256,7 +272,7 @@ function allocateMarkersEdgeCases(project, markers) {
   return project;
 }
 
-function eng (projects) {
+function addMarkers (projects) {
   projects.reduce((accum, curr) => {
     const P = Projects.find(d => d.p_ID === curr.project_ID);
     if (P) {
