@@ -1,30 +1,37 @@
 [
- {
-   "d_id": 1,
-   "d_name": "Civil"
- },
- {
-   "d_id": 2,
-   "d_name": "Electrical"
- },
- {
-   "d_id": 3,
-   "d_name": "Electronics"
- },
- {
-   "d_id": 4,
-   "d_name": "Mechanical"
- },
- {
-   "d_id": 5,
-   "d_name": "Mechatronics"
- },
- {
-   "d_id": 6,
-   "d_name": "Software"
- },
- {
-   "d_id": 7,
-   "d_name": "Telecommunications"
- }
+  {
+    "d_id": 1,
+    "d_name": "Civil",
+    "d_unit_code": "CIVIL4092"
+  },
+  {
+    "d_id": 2,
+    "d_name": "Electrical",
+    "d_unit_code": "ELEC4092"
+  },
+  {
+    "d_id": 3,
+    "d_name": "Electronics",
+    "d_unit_code": "ELEC4092"
+  },
+  {
+    "d_id": 4,
+    "d_name": "Mechanical",
+    "d_unit_code": "MECH4092"
+  },
+  {
+    "d_id": 5,
+    "d_name": "Mechatronics",
+    "d_unit_code": "MTRN4092"
+  },
+  {
+    "d_id": 6,
+    "d_name": "Software",
+    "d_unit_code": "COMP4092"
+  },
+  {
+    "d_id": 7,
+    "d_name": "Telecommunications",
+    "d_unit_code": "TELE4092"
+  }
 ]

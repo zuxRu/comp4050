@@ -1,0 +1,702 @@
+[
+  {
+    "s_ID": 95792895,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 219,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95435596,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 47,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95435596,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 47,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88480741,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 112,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95253978,
+    "supervisor_ID": "mq21164971",
+    "project_ID": 40,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88268998,
+    "supervisor_ID": "mq15472165",
+    "project_ID": 17,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86172017,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 93,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95607796,
+    "supervisor_ID": "mq15533296",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95207275,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 16,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86222278,
+    "supervisor_ID": "mq15985915",
+    "project_ID": 220,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95478889,
+    "supervisor_ID": "mq33725504",
+    "project_ID": 103,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95238278,
+    "supervisor_ID": "mq21164971",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86160086,
+    "supervisor_ID": "mq15391351",
+    "project_ID": 135,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95220522,
+    "supervisor_ID": "mq21164971",
+    "project_ID": 107,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95189714,
+    "supervisor_ID": "mq15634092",
+    "project_ID": 216,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86260056,
+    "supervisor_ID": "mq15515515",
+    "project_ID": 100,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95968895,
+    "supervisor_ID": "mq21910568",
+    "project_ID": 20,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88438214,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 180,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95472165,
+    "supervisor_ID": "mq15634092",
+    "project_ID": 71,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95162972,
+    "supervisor_ID": "mq15207275",
+    "project_ID": 27,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95499918,
+    "supervisor_ID": "mq15515515",
+    "project_ID": 30,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95665737,
+    "supervisor_ID": "mq15472165",
+    "project_ID": 102,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86510605,
+    "supervisor_ID": "mq21164971",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88161388,
+    "supervisor_ID": "mq15634092",
+    "project_ID": 1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95417903,
+    "supervisor_ID": "mq21419775",
+    "project_ID": 121,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95673837,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 176,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95634998,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 24,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95881227,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 24,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95967598,
+    "supervisor_ID": "mq15432791",
+    "project_ID": 197,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95123886,
+    "supervisor_ID": "mq21335822",
+    "project_ID": 161,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95634092,
+    "supervisor_ID": "mq15792815",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95705879,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 97,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95430888,
+    "supervisor_ID": "mq33725504",
+    "project_ID": 3,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88647220,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 176,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88428693,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 223,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95527652,
+    "supervisor_ID": "mq15985915",
+    "project_ID": 171,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95689016,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 196,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95423989,
+    "supervisor_ID": "mq15985915",
+    "project_ID": 137,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88927762,
+    "supervisor_ID": "mq15156022",
+    "project_ID": 8,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86258981,
+    "supervisor_ID": "mq21910568",
+    "project_ID": 189,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86160051,
+    "supervisor_ID": "mq21613415",
+    "project_ID": 10,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95649186,
+    "supervisor_ID": "mq15515515",
+    "project_ID": 205,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95986116,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 44,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95258995,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 79,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95303738,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 113,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95525005,
+    "supervisor_ID": "mq15391351",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95352828,
+    "supervisor_ID": "mq15432791",
+    "project_ID": 25,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 43801749,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 117,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95533296,
+    "supervisor_ID": "mq15533296",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95985995,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 75,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88861249,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 31,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 43228003,
+    "supervisor_ID": "mq21164971",
+    "project_ID": 7,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95155763,
+    "supervisor_ID": "mq15391351",
+    "project_ID": 5,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95385959,
+    "supervisor_ID": "mq15207275",
+    "project_ID": 224,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95953988,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 184,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86159304,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 185,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86105700,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 120,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95159629,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 24,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86158987,
+    "supervisor_ID": "mq15527652",
+    "project_ID": 55,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95574766,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 217,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88929195,
+    "supervisor_ID": "mq21438214",
+    "project_ID": 99,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95958238,
+    "supervisor_ID": "mq15527652",
+    "project_ID": 123,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88625693,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 185,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95568642,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 186,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95601739,
+    "supervisor_ID": "mq15337194",
+    "project_ID": 184,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95682888,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 192,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95871671,
+    "supervisor_ID": "mq15634092",
+    "project_ID": 1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95712913,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 169,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 43682871,
+    "supervisor_ID": "mq15985915",
+    "project_ID": 194,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88419775,
+    "supervisor_ID": "mq33725504",
+    "project_ID": 34,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95391351,
+    "supervisor_ID": "mq15985915",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95309973,
+    "supervisor_ID": "mq15533296",
+    "project_ID": 4,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86158901,
+    "supervisor_ID": "mq15391351",
+    "project_ID": 70,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95889910,
+    "supervisor_ID": "mq21613415",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95543356,
+    "supervisor_ID": "mq43801749",
+    "project_ID": 77,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88164971,
+    "supervisor_ID": "mq15533296",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86116184,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 221,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86158855,
+    "supervisor_ID": "mq15634092",
+    "project_ID": 141,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 42914035,
+    "supervisor_ID": "mq21419775",
+    "project_ID": 32,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95096163,
+    "supervisor_ID": "mq21335822",
+    "project_ID": 198,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95636591,
+    "supervisor_ID": "mq15472165",
+    "project_ID": 119,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88481888,
+    "supervisor_ID": "mq21910568",
+    "project_ID": 189,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95952612,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 52,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95630216,
+    "supervisor_ID": "mq15634092",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95150680,
+    "supervisor_ID": "mq15391351",
+    "project_ID": 135,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95520976,
+    "supervisor_ID": "mq15662398",
+    "project_ID": 97,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88966598,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 136,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95589550,
+    "supervisor_ID": "mq15156022",
+    "project_ID": 214,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95867194,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 154,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95867194,
+    "supervisor_ID": "mq15219910",
+    "project_ID": 154,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95543364,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 89,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95543364,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 89,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86235949,
+    "supervisor_ID": "mq33510605",
+    "project_ID": 73,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88910568,
+    "supervisor_ID": "mq15527652",
+    "project_ID": 21,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88613415,
+    "supervisor_ID": "mq15391351",
+    "project_ID": -1,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88908415,
+    "supervisor_ID": "mq15533296",
+    "project_ID": 104,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86108777,
+    "supervisor_ID": "mq43801749",
+    "project_ID": 202,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 88695341,
+    "supervisor_ID": "mq15630216",
+    "project_ID": 193,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 86158960,
+    "supervisor_ID": "mq21613415",
+    "project_ID": 149,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  },
+  {
+    "s_ID": 95620326,
+    "supervisor_ID": "mq21625693",
+    "project_ID": 195,
+    "second_marker_ID": -1,
+    "presentation_ID": -1
+  }
+]
