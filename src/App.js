@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import {markerAlgorithm, exportMarkerData, presentationScheduler}  from"./utils/algorithms";
+import { markerAlgorithm, presentationScheduler, projectAllocation }  from"./utils/algorithms";
+import { submitMarkerData, submitPresentations, submitProjects } from './utils/ApiUtils';
 var presSched = [];
 var allocatedProjects;
 
@@ -12,16 +13,22 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button type="button" onClick={projectAllocation}>
+        Allocate Projects
+        </button>
+        <button type="button" onClick={submitProjects}>
+        Export Projects Data
+        </button>
         <button type="button" onClick={markerAlgorithm}>
         Allocate Markers
         </button>
-        <button type="button" onClick={exportMarkerData}>
-        Export Markers
+        <button type="button" onClick={submitMarkerData}>
+        Export Markers Data
         </button>
         <button type="button" onClick={presentationScheduler}>
         Allocate Presentation
         </button>
-        <button type="button" onClick={exportPresentationData}>
+        <button type="button" onClick={submitPresentations}>
         Export Presentation Data
         </button>
         <a
