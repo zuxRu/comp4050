@@ -27,3 +27,43 @@ module.exports.getAllProjects = async () => {
     .catch(err => console.error(err));
     return projects;
 }
+
+module.exports.getAllocations = async () => {
+    const projects = await api.get("supervisor/assignment")
+    .then(res => {return res.data})
+    .catch(err => console.error(err));
+    return projects;
+}
+
+module.exports.submitProjects = async (ProjectAlloc) => {
+    const res = await api.post("supervisors/assignment", ProjectAlloc)
+    .then((response) => {
+        console.log(response);
+    }, (error) => {
+        console.log(error);
+    });
+}
+
+module.exports.submitMarkerData = async (ProjectAlloc) => {
+    const res = await api.post("supervisors/allocation", ProjectAlloc)
+    .then((response) => {
+        console.log(response);
+    }, (error) => {
+        console.log(error);
+    });
+}
+
+module.exports.submitPresentations = async (ProjectAlloc, Presentation) => {
+    const resProj = await api.post("supervisors/allocation", ProjectAlloc)
+    .then((response) => {
+        console.log(response);
+    }, (error) => {
+        console.log(error);
+    });
+    const resPres = await api.post("presentation", Presentation)
+    .then((response) => {
+        console.log(response);
+    }, (error) => {
+        console.log(error);
+    });
+}
