@@ -389,6 +389,98 @@ export function presentationScheduler() {
     });
   }, []);
 
+  //list of classrooms for presentation
+  let classroomList = [
+    "01CC 101",
+    "01CC 103",
+    "01CC 104",
+    "01CC 105",
+    "01CC 106",
+    "01CC 107",
+    "01CC 109",
+    "01CC 111",
+    "01CC 112",
+    "01CC 114",
+    "01CC 115",
+    "01CC 116",
+    "01CC 201",
+    "01CC 203",
+    "01CC 204",
+    "01CC 205",
+    "01CC 207",
+    "01CC 208",
+    "01CC 210",
+    "01CC 214",
+    "01CC 215",
+    "01CC 216",
+    "01CC 217",
+    "01CC 218",
+    "02TP G10",
+    "02TP G11",
+    "02TP G14",
+    "02TP G15",
+    "02TP G60",
+    "02TP G62",
+    "02TP G63",
+    "02TP G64",
+    "02TP G65",
+    "02TP G66",
+    "02TP G67",
+    "02TP G68",
+    "02TP G69",
+    "02TP G70",
+    "14SCO T2",
+    "14SCO T3",
+    "14SCO T4",
+    "14SCO T5",
+    "14SCO 100",
+    "14SCO 146",
+    "14SCO 163",
+    "14SCO 200",
+    "14SCO 263",
+    "14SCO 264",
+    "23WW T1",
+    "23WW T2",
+    "23WW P.G.Price",
+    "23WW 101",
+    "23WW 103",
+    "23WW 105",
+    "23WW 201",
+    "23WW 202",
+    "23WW 203",
+    "23WW 204",
+    "23WW 205",
+    "06EaR 104",
+    "06EaR 118",
+    "06EaR 206",
+    "06EaR 208",
+    "06EaR 214",
+    "06EaR 306",
+    "06EaR 308",
+    "06EaR 314",
+    "06EaR 316"
+  ];
+
+  //shuffle function 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+shuffle(classroomList); //randomise classroom list
+
   /* Schema
     ps_ID        -> +1 every 12 students
     classroomNumber       -> for MVP, classroomNum = 1,2,3 ... substitues room code
@@ -402,7 +494,23 @@ export function presentationScheduler() {
   //Data to be built according to schema
   let presIDCounter = 1; //Unique presID = 0,1,2,3 ...
 
-  let dayofWeek = ["Mon", "Tue", "Wed"]; //preset for MVP
+  let dayofWeek = [
+    "06-11-23",
+    "07-11-23",
+    "08-11-23",
+    "09-11-23",
+    "10-11-23",
+    "13-11-23",
+    "14-11-23",
+    "15-11-23",
+    "16-11-23",
+    "17-11-23",
+    "20-11-23",
+    "21-11-23",
+    "22-11-23",
+    "23-11-23",
+    "24-11-23",
+  ];
   let dayCount = 0; // use for idx of dayofweek
 
   let seshArr = ["AM", "PM"]; //Only 2 sessions/times per day
@@ -411,13 +519,11 @@ export function presentationScheduler() {
   // Calculating no of classrooms needed
   let studentsPerRoomPerSesh = 12; // 3hr sesh, 15min per pres = 12 presentations per sesh per room
   let allPresPerSesh =
-    studentsPerRoomPerSesh * dayofWeek.length * seshArr.length; //should be 12*3*2 = 72
+    studentsPerRoomPerSesh * 3 * seshArr.length; //should be 12*3*2 = 72
   let numberOfClassrooms = Math.ceil(ProjectAlloc.length / allPresPerSesh); // no of presentations/persentations per sesh = num of classrooms we need
   let classroomNum = 1;
 
   // Implementing ps_chair_ID and ps_2ndmarker_ID
-
-  // No idea how this needs to be done
   // implementing ps_chair_ID as picking between a predefined list of academics
   //(that way if kate wants to do all of them she can just self nominate herself and hazer can say which ones he wants working on it)
   let ps_chair_IDarr = [
@@ -438,20 +544,21 @@ export function presentationScheduler() {
 
       // Update the presentation properties
       tempPres.ps_ID = presIDCounter;
-      tempPres.classroomNumber = classroomNum;
+      tempPres.classroomNumber = classroomList[classroomNum-1];
       tempPres.ps_time = seshArr[timeCount % seshArr.length];
-      tempPres.ps_date = dayofWeek[dayCount % dayofWeek.length];
+      //tempPres.ps_date = dayofWeek[dayCount % dayofWeek.length];
+      tempPres.ps_date = dayofWeek[dayCount % 3];
 
       //Implementation 1: using preset array of ps_chair_ID and second Marker IDs
       //tempPres.ps_chair_ID = ps_chair_IDarr [presIDCounter-1 % ps_chair_IDarr.length];
       //tempPres.ps_2ndmarker_ID = ps_2ndmarker_IDarr [presIDCounter-1 % ps_2ndmarker_IDarr.length];
 
       //implementation 2:
-      //could also allocate chair as whoever's supervising in that sesh first
+      //allocate chair as whoever's supervising in that sesh first
       tempPres.ps_chair_ID = ProjectAlloc[i].supervisor_ID;
-      //second marker could be the last supervisor in the same sesh.
-      if (ProjectAlloc[i + 11] && ProjectAlloc[i + 11].supervisor_ID) {
-        tempPres.ps_2ndmarker_ID = ProjectAlloc[i + 11].supervisor_ID;
+      //second marker is the second supervisor in the same sesh.
+      if (ProjectAlloc[i + 1] && ProjectAlloc[i + 1].supervisor_ID) {
+        tempPres.ps_2ndmarker_ID = ProjectAlloc[i + 1].supervisor_ID;
       } else {
         //if not enough people in the sesh,
         tempPres.ps_2ndmarker_ID = ProjectAlloc[i].supervisor_ID; // make second marker same as first supervisor
