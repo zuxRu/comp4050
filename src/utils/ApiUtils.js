@@ -49,14 +49,14 @@ module.exports.getSelfProposed = async () => {
     return selfProposed;
 }
 
-module.exports.submitProjects = async (ProjectAlloc) => {
-    const res = await api.post("supervisors/allocation", ProjectAlloc)
+module.exports.submitProjects = async (project) => {
+    await api.post("supervisor/allocation", project)
 }
 
-module.exports.submitPresentations = async (Presentation) => {
-    const resPres = await api.post("presentation", Presentation)
+module.exports.submitPresentations = async (presentation) => {
+    await api.post("presentation", presentation)
 }
 
-module.exports.submitSupervisors = async (Supervisors) => {
-    const resProj = await api.post("supervisor", Supervisors)
+module.exports.submitSupervisors = async (supervisor) => {
+    await api.post("supervisor", supervisor)
 }

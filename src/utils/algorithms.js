@@ -1,6 +1,5 @@
 import ProjectAlloc from "../lucasProjectAlloc.json";
 import Preferences from "../Preferences.json";
-import selfProposed from "../SelfProposedProject.json";
 import {
   getAcademics,
   getAllStudents,
@@ -10,7 +9,6 @@ import {
   getSelfProposed,
   getPreferences,
   submitProjects,
-  //submitSupervisors,
   submitPresentations,
   submitSupervisors,
 } from "./ApiUtils";
@@ -19,11 +17,12 @@ var ProjectAllocStore;
 var PresSchedStore;
 var SupervisorsStore;
 
+
 var Supervisors;
 var Academics;
 var Students;
 var Projects;
-//var selfProposed;
+var selfProposed;
 //var Preferences;
 //var ProjectAlloc;
 
@@ -32,22 +31,16 @@ async function getInfo() {
   Academics = await getAcademics();
   Students = await getAllStudents();
   Projects = await getAllProjects();
-  //selfProposed = await getSelfProposed();
+  selfProposed = await getSelfProposed();
   //Preferences = await getPreferences();
-  /*console.log(
-    Supervisors,
-    Academics,
-    Students,
-    Projects,
-    selfProposed,
-    Preferences
-  );*/
   //ProjectAlloc = await getAllocations();
+  
 }
 
 getInfo();
 
 export function projectAllocation() {
+
   getInfo();
 
   let projectAllocations = [];
@@ -76,11 +69,11 @@ export function projectAllocation() {
 
           Supervisors[superIDX].s_current_load++;
 
-          allocTemp.s_ID = Students[i].st_ID;
-          allocTemp.supervisor_ID = selfProposed[selfie].sp_supervisor_ID;
-          allocTemp.project_ID = -1; //find out if i add projects from self proposed to Projects after allocation. And give it an ID
-          allocTemp.second_marker_ID = -1;
-          allocTemp.presentation_ID = -1;
+          allocTemp.al_student_ID = Students[i].st_ID;
+          allocTemp.al_supervisor_ID = selfProposed[selfie].sp_supervisor_ID;
+          allocTemp.al_project_ID = -1; //find out if i add projects from self proposed to Projects after allocation. And give it an ID
+          allocTemp.al_2ndmarker_ID = -1;
+          allocTemp.al_presentation_ID = -1;
 
           projectAllocations.push(allocTemp);
           allocTemp = {};
@@ -105,11 +98,11 @@ export function projectAllocation() {
               Supervisors[superIDX].s_capacity <
               Supervisors[superIDX].s_current_load
             ) {
-              allocTemp.s_ID = Students[i].st_ID;
-              allocTemp.supervisor_ID = Projects[projectIDX].p_supervisor;
-              allocTemp.project_ID = Projects[projectIDX].ID;
-              allocTemp.second_marker_ID = -1;
-              allocTemp.presentation_ID = -1;
+              allocTemp.al_student_ID = Students[i].st_ID;
+              allocTemp.al_supervisor_ID = Projects[projectIDX].p_supervisor;
+              allocTemp.al_project_ID = Projects[projectIDX].p_ID;
+              allocTemp.al_2ndmarker_ID = -1;
+              allocTemp.al_presentation_ID = -1;
 
               projectAllocations.push(allocTemp);
               allocTemp = {};
@@ -130,15 +123,15 @@ export function projectAllocation() {
 
     while (allocated === false) {
       allocTemp = {};
-      allocTemp.s_ID = Students[i].st_ID;
+      allocTemp.al_student_ID = Students[i].st_ID;
       let projectIDX = Math.floor(Math.random() * Projects.length);
-      allocTemp.supervisor_ID = Projects[projectIDX].p_supervisor;
-      allocTemp.project_ID = Projects[projectIDX].ID;
-      allocTemp.second_marker_ID = -1;
-      allocTemp.presentation_ID = -1;
+      allocTemp.al_supervisor_ID = Projects[projectIDX].p_supervisor;
+      allocTemp.al_project_ID = Projects[projectIDX].p_ID;
+      allocTemp.al_2ndmarker_ID = -1;
+      allocTemp.al_presentation_ID = -1;
 
       //find supervisor allocation weight
-      superIDX = findSupervisorIDX(allocTemp.supervisor_ID, Supervisors);
+      superIDX = findSupervisorIDX(allocTemp.al_supervisor_ID, Supervisors);
 
       if (
         Supervisors[superIDX].s_capacity > 0 &&
@@ -181,11 +174,10 @@ export function projectAllocation() {
       }
     }
   }
-  console.log("the unallocatable kids");
-  console.log(unallocatable);
-  console.log(projectAllocations);
+
+  ProjectAllocStore = projectAllocations;
   SupervisorsStore = Supervisors;
-  ProjectAllocStore = projectAllocations
+  console.log(ProjectAllocStore);
 
   function hasSelfProposed(studnetID, selfPrj) {
     for (let i = 0; i < selfPrj.length; i++) {
@@ -199,7 +191,7 @@ export function projectAllocation() {
   //finds supervisor index based on supervisor id
   function findSupervisorIDX(superVisor, superArr) {
     for (let i = 0; i < superArr.length; i++) {
-      if (superVisor.localeCompare(superArr[i].s_ID)) {
+      if (superVisor.localeCompare(superArr[i].al_student_ID)) {
         return i;
       }
     }
@@ -227,7 +219,10 @@ export function projectAllocation() {
 }
 
 export function markerAlgorithm() {
+
   getInfo();
+
+  ProjectAlloc = ProjectAllocStore;
 
   var aCIVIL = [];
   var aCOMP = [];
@@ -236,154 +231,145 @@ export function markerAlgorithm() {
   var aMTRN = [];
   var aTELE = [];
 
-
   //add marker capacities to all academics
-  function addAcademicCaps() {
-    const temp = Academics.map(element => {
+  Academics = Academics.map(element => {
       return element = {
-        ...{ ...element, a_cap: 10 }
+        ...{...element, a_cap: 10}
       };
-    });
-    return temp;
-  }
+  }, []);
 
   //if academic is a supervisor, update capacity
-  function addSupervisorCap() {
-    const temp = Academics.map(element => {
-      const S = Supervisors.find(s => s.s_ID === element.a_ID);
+  Academics.reduce((accum, curr) => {
+      const S = Supervisors.find(s => s.al_student_ID === curr.a_ID);
       if (S) {
-        element.a_cap = S.s_capacity - S.s_current_load;
+        curr.a_cap = S.s_capacity - S.s_current_load;
       };
-      return element;
-    });
-    return temp;
-  }
+      return accum;
+  });
 
   //sort academics into their disciplines
-  function sortAcademics() {
-    for (let element of Academics) {
-      if (element.a_discipline.includes("Civil")) {
-        aCIVIL.push(element);
-      } else if (element.a_discipline.includes("Electronics")) {
-        aELEC.push(element);
-      } else if (element.a_discipline.includes("Electrical")) {
-        aELEC.push(element);
-      } else if (element.a_discipline.includes("Mechanical")) {
-        aMECH.push(element);
-      } else if (element.a_discipline.includes("Mechatronics")) {
-        aMTRN.push(element);
-      } else if (element.a_discipline.includes("Software")) {
-        aCOMP.push(element);
-      } else if (element.a_discipline.includes("Telecommunications")) {
-        aTELE.push(element);
-      } else {
-        console.log("error: New unit found at " + element);
-      }
+  for (let element of Academics) {
+    if (element.a_discipline.includes("Civil")) {
+      aCIVIL.push(element);
+    } else if (element.a_discipline.includes("Electronics")) {
+      aELEC.push(element);
+    } else if (element.a_discipline.includes("Electrical")) {
+      aELEC.push(element);
+    } else if (element.a_discipline.includes("Mechanical")) {
+      aMECH.push(element);
+    } else if (element.a_discipline.includes("Mechatronics")) {
+      aMTRN.push(element);
+    } else if (element.a_discipline.includes("Software")) {
+      aCOMP.push(element);
+    } else if (element.a_discipline.includes("Telecommunications")) {
+      aTELE.push(element);
+    } else {
+      console.log("error: New unit found at " + element);
     }
   }
 
   //sort markers in descending order to load balance
   function loadBalance(markers) {
-    markers.sort((a, b) => {
-      return b.a_cap - a.a_cap;
-    });
+      markers.sort((a, b) => {
+        return b.a_cap - a.a_cap;
+      });
   }
-
 
   //allocate single marker to project
   function allocateMarker(project, markers) {
-    if (project.second_marker_ID !== -1) {
-      return project;
-    }
-    loadBalance(markers);
-    var next;
-    while (markers.length > 0) {
-      next = markers.shift();
-      if (next.a_ID === project.supervisor_ID) {
-        markers.push(next);
-      } else {
-        if (next.a_cap > 0) {
-          project.second_marker_ID = next.a_ID;
-          next.a_cap--;
+      if (project.al_2ndmarker_ID !== -1) {
+        return project;
+      } 
+      loadBalance(markers);
+      var next;
+      while (markers.length > 0){
+        next = markers.shift();
+        if (next.a_ID === project.al_supervisor_ID) {
           markers.push(next);
-          return project;
+        }
+        else {
+          if (next.a_cap > 0) {
+            project.al_2ndmarker_ID = next.a_ID;
+            next.a_cap--;
+            markers.push(next);
+            return project;
+          }
         }
       }
-    }
-    return project;
+
+      return project;
   }
 
   //allocate markers
-  function addMarkers(ProjectAlloc) {
-    ProjectAlloc.reduce((accum, curr) => {
-      const P = Students.find((d) => d.st_ID === curr.st_ID);
+  ProjectAlloc.reduce((accum, curr) => {
+      const P = Students.find(d => d.st_ID === curr.st_ID);
       if (P) {
         if (P.st_unit.includes("CIVIL")) {
           allocateMarker(curr, aCIVIL);
-        } else if (P.st_unit.includes("ELEC")) {
+        } 
+        else if (P.st_unit.includes("ELEC")) {
           allocateMarker(curr, aELEC);
-        } else if (P.st_unit.includes("MECH")) {
+        }
+        else if (P.st_unit.includes("MECH")) {
           allocateMarker(curr, aMECH);
-        } else if (P.st_unit.includes("MTRN")) {
+        }
+        else if (P.st_unit.includes("MTRN")) {
           allocateMarker(curr, aMTRN);
-        } else if (P.st_unit.includes("COMP")) {
+        }
+        else if (P.st_unit.includes("COMP")) {
           allocateMarker(curr, aCOMP);
-        } else if (P.st_unit.includes("TELE")) {
+        }
+        else if (P.st_unit.includes("TELE")) {
           allocateMarker(curr, aTELE);
         }
-      }
+      };
       return accum;
-    });
-    return ProjectAlloc;
-  }
+  }, []);
 
   //allocate edge markers
-  function addMarkersEdgeCases(ProjectAlloc) {
-    ProjectAlloc.reduce((accum, curr) => {
-      const P = Projects.find((d) => d.p_ID === curr.project_ID);
+  ProjectAlloc.reduce((accum, curr) => {
+      const P = Projects.find(d => d.p_ID === curr.al_project_ID);
       if (P) {
+
         if (P.p_fields.includes("Civil")) {
           allocateMarker(curr, aCIVIL);
-        } else if (P.p_fields.includes("Electrical")) {
+        } 
+        else if (P.p_fields.includes("Electrical")) {
           allocateMarker(curr, aELEC);
-        } else if (P.p_fields.includes("Electronics")) {
+        }
+        else if (P.p_fields.includes("Electronics")) {
           allocateMarker(curr, aELEC);
-        } else if (P.p_fields.includes("Mechanical")) {
+        }
+        else if (P.p_fields.includes("Mechanical")) {
           allocateMarker(curr, aMECH);
-        } else if (P.p_fields.includes("Mechatronics")) {
+        }
+        else if (P.p_fields.includes("Mechatronics")) {
           allocateMarker(curr, aMTRN);
-        } else if (P.p_fields.includes("Software")) {
+        }
+        else if (P.p_fields.includes("Software")) {
           allocateMarker(curr, aCOMP);
-        } else if (P.p_fields.includes("Computer")) {
-          allocateMarker(curr, aCOMP);
-        } else if (P.p_fields.includes("Telecommunication")) {
+        }
+        else if (P.p_fields.includes("Telecommunication")) {
           allocateMarker(curr, aTELE);
         }
-      }
+      };
       return accum;
-    }, []);
-    return ProjectAlloc;
-  }
-
-  Academics = addAcademicCaps();
-  Academics = addSupervisorCap();
-  sortAcademics();
-  console.log(Academics, Supervisors, ProjectAlloc, Students)
-  ProjectAlloc = addMarkers(ProjectAlloc);
-  ProjectAlloc = addMarkersEdgeCases(ProjectAlloc);
-  console.log(ProjectAlloc);
-  console.log(Academics, Supervisors, ProjectAlloc, Students)
+  }, []);
   ProjectAllocStore = ProjectAlloc;
   SupervisorsStore = Supervisors;
+  console.log(ProjectAllocStore);
 }
 
 export function presentationScheduler() {
+
   getInfo();
 
+  ProjectAlloc = ProjectAllocStore;
+  
   //Sort allocated Projects by supervisor as a Optimization -> Presentation more likely to have the same supervisor
   //Problem/edge case: how to prevent same supervisor in multiple rooms at the same time?
   ProjectAlloc.sort((a, b) => {
-    return a.supervisor_ID.localeCompare(b.supervisor_ID, undefined, {
+    return a.al_supervisor_ID.localeCompare(b.al_supervisor_ID, undefined, {
       numeric: true,
       sensitivity: "base",
     });
@@ -483,7 +469,7 @@ shuffle(classroomList); //randomise classroom list
 
   /* Schema
     ps_ID        -> +1 every 12 students
-    classroomNumber       -> for MVP, classroomNum = 1,2,3 ... substitues room code
+    ps_classroom       -> for MVP, classroomNum = 1,2,3 ... substitues room code
     ps_time                  -> AM or PM
     day                   -> Mon Tue or Wed
     ps_chair_ID (-1)
@@ -544,7 +530,7 @@ shuffle(classroomList); //randomise classroom list
 
       // Update the presentation properties
       tempPres.ps_ID = presIDCounter;
-      tempPres.classroomNumber = classroomList[classroomNum-1];
+      tempPres.ps_classroom = classroomList[classroomNum-1];
       tempPres.ps_time = seshArr[timeCount % seshArr.length];
       //tempPres.ps_date = dayofWeek[dayCount % dayofWeek.length];
       tempPres.ps_date = dayofWeek[dayCount % 3];
@@ -555,13 +541,13 @@ shuffle(classroomList); //randomise classroom list
 
       //implementation 2:
       //allocate chair as whoever's supervising in that sesh first
-      tempPres.ps_chair_ID = ProjectAlloc[i].supervisor_ID;
+      tempPres.ps_chair_ID = ProjectAlloc[i].al_supervisor_ID;
       //second marker is the second supervisor in the same sesh.
-      if (ProjectAlloc[i + 1] && ProjectAlloc[i + 1].supervisor_ID) {
-        tempPres.ps_2ndmarker_ID = ProjectAlloc[i + 1].supervisor_ID;
+      if (ProjectAlloc[i + 1] && ProjectAlloc[i + 1].al_supervisor_ID) {
+        tempPres.ps_2ndmarker_ID = ProjectAlloc[i + 1].al_supervisor_ID;
       } else {
         //if not enough people in the sesh,
-        tempPres.ps_2ndmarker_ID = ProjectAlloc[i].supervisor_ID; // make second marker same as first supervisor
+        tempPres.ps_2ndmarker_ID = ProjectAlloc[i].al_supervisor_ID; // make second marker same as first supervisor
       }
 
       // Add the presentation to the schedule
@@ -590,16 +576,20 @@ shuffle(classroomList); //randomise classroom list
       presIDCounter++;
     }
     // Assign presentation ID to the allocated project
-    ProjectAlloc[i].presentation_ID = presIDCounter - 1;
+    ProjectAlloc[i].al_presentation_ID = presIDCounter - 1;
   }
-  console.log(ProjectAlloc);
-  console.log(presSched);
-  ProjectAlloc = ProjectAllocStore;
-  presSched = PresSchedStore;
+  ProjectAllocStore = ProjectAlloc;
+  PresSchedStore = presSched;
+  console.log(ProjectAllocStore);
+  console.log(PresSchedStore);
 }
 
-export async function postProjAlloc() {
-  ProjectAllocStore.map (element =>
+function postSupervisor(){
+  SupervisorsStore.map(element =>
+    submitSupervisors(element))
+}
+export function postProjAlloc() {
+   ProjectAllocStore.forEach(element =>
     submitProjects(element))
 }
 
