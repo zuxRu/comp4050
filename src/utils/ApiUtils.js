@@ -35,35 +35,28 @@ module.exports.getAllocations = async () => {
     return projects;
 }
 
+module.exports.getPreferences = async () => {
+    const preferences = await api.get("projectPreference")
+    .then(res => {return res.data})
+    .catch(err => console.error(err));
+    return preferences;
+}
+
+module.exports.getSelfProposed = async () => {
+    const selfProposed = await api.get("selfProjectPreference")
+    .then(res => {return res.data})
+    .catch(err => console.error(err));
+    return selfProposed;
+}
+
 module.exports.submitProjects = async (ProjectAlloc) => {
-    const res = await api.post("supervisors/assignment", ProjectAlloc)
-    .then((response) => {
-        console.log(response);
-    }, (error) => {
-        console.log(error);
-    });
-}
-
-module.exports.submitMarkerData = async (ProjectAlloc) => {
     const res = await api.post("supervisors/allocation", ProjectAlloc)
-    .then((response) => {
-        console.log(response);
-    }, (error) => {
-        console.log(error);
-    });
 }
 
-module.exports.submitPresentations = async (ProjectAlloc, Presentation) => {
-    const resProj = await api.post("supervisors/allocation", ProjectAlloc)
-    .then((response) => {
-        console.log(response);
-    }, (error) => {
-        console.log(error);
-    });
+module.exports.submitPresentations = async (Presentation) => {
     const resPres = await api.post("presentation", Presentation)
-    .then((response) => {
-        console.log(response);
-    }, (error) => {
-        console.log(error);
-    });
+}
+
+module.exports.submitSupervisors = async (Supervisors) => {
+    const resProj = await api.post("supervisor", Supervisors)
 }
